@@ -1,0 +1,10 @@
+name: Examine GitHub hosted Ubuntu 22.04 runner
+on: workflow_dispatch
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: pwd
+      - run: whoami
+      - run: which ssh-keyscan
+
